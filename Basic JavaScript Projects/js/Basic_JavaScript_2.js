@@ -17,3 +17,14 @@ function fun3() {
     sentence = sentence.fontsize(7);
     document.getElementById("concatenate").innerHTML = sentence;
 }
+
+function fun4() {
+    var num = 2;
+    var num2 = 10;
+    var num3 = 5;
+    var result3 = (num + num3) * num2;
+    var sentence2 = "The answer is: " + result3;
+    sentence2 = sentence2.fontcolor("purple");
+    sentence2 = sentence2.fontsize(5);
+    document.getElementById("newfunction").innerHTML = sentence2;
+}

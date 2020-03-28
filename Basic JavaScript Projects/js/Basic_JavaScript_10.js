@@ -134,6 +134,7 @@ function break_function()   {
     document.getElementById("break_fun").innerHTML = count;
 }
 
+//function below demonstrates the 'continue' statement
 function cont_function()    {
     var test = "";
     for (i = 0; i < 20; i++){

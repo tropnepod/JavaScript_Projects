@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="./css/one_page_website.css">
+		<title>The Cooking Blog</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		
+		<!-- NAV -->
+		<div>
+			<nav>
+				<h5>Navigation</h5>
+				<ul>
+					<a href="#home" id="link"><li>Home</li></a>
+					<a href="#gallery"><li>Gallery</li></a>
+								<ul>
+									<a href="#pictures"><li>Pictures</li></a>
+									<a href="#video"><li>Video</li></a>
+								</ul>
+					<a href="#contact"><li>Contact</li></a>
+				</ul>
+			</nav>
+		</div>
+		<!-- END NAV -->
+		
+		<!-- HOME -->
+		<div id="home">
+			<div>
+				<div>
+					<h1>The Cooking Blog</h1>
+					<h4>By The Lazy Chef</h4>
+				</div>
+				<div>
+					<p>Welcome to The Cooking Blog!</p>
+					<p>We have all things cooking: </p>
+						<ul>
+							<li>Recipes</li>
+							<li>Articles</li>
+							<li>Pictures</li>
+							<li>Videos</li>
+							<li>and more...</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+		<!-- END HOME -->
+		
+		<!-- GALLERY -->
+		<section>
+			<div id="gallery">
+				<h4>Gallery</h4>
+				<div id="pictures" class="row">
+				<!-- PHOTO CONTAINERS -->
+					<div class="row">
+						<div class="column">
+							<img src="./img1.jpg" onclick="openModal(); currentSlide(1)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="./img2.jpg" onclick="openModal(); currentSlide(2)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="./img3.jpg" onclick="openModal(); currentSlide(3)" class="hover-shadow">
+						</div>
+						<div class="column">
+							<img src="./img4.jpg" onclick="openModal(); currentSlide(4)" class="hover-shadow">
+						</div>
+					</div>
+				<!-- END PHOTO CONTAINERS -->
+				<!--Lightbox-->
+					<div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+
+							<div class="mySlides">
+								<div class="numbertext">1 / 4</div>
+								<img src="./img1_wide.jpeg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">2 / 4</div>
+								<img src="./img2_wide.jpeg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">3 / 4</div>
+								<img src="./img3_wide.jpeg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">4 / 4</div>
+								<img src="./img4_wide.jpeg" style="width:100%">
+							</div>
+
+							<!--next/previous-->
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+							<!--caption text-->
+							<div class="caption-container">
+								<p id="caption"></p>
+							</div>
+
+							<!--thumbnail-->
+							<div class="column">
+								<img class="demo" src="./img1.jpg" onclick="currentSlide(1)" alt="Table">
+							</div>
+							<div class="column">
+								<img class="demo" src="./img2.jpg" onclick="currentSlide(2)" alt="Spoons">
+							</div>
+							<div class="column">
+								<img class="demo" src="./img3.jpg" onclick="currentSlide(3)" alt="Shakshooka">
+							</div>
+							<div class="column">
+								<img class="demo" src="./img4.jpg" onclick="currentSlide(4)" alt="Mise en Place">
+							</div>
+						</div>
+					</div>
+				<!-- VIDEO CONTAINERS -->
+					<div id="video">
+						<div>
+							<iframe width="400" height="300" src="https://www.youtube.com/embed/ZJy1ajvMU1k" 
+							frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+							allowfullscreen>
+							</iframe>
+						</div>
+						<div>
+							<iframe width="400" height="300" src="https://www.youtube.com/embed/yNJTRGoPsKo" 
+							frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+							allowfullscreen>
+							</iframe>
+						</div>
+					</div>
+				<!-- END VIDEO CONTAINERS -->
+				
+				</div>
+			</div>
+		</section>
+		
+		<section>
+			<div id="contact">
+				<div>
+					<h4>Contact Us</h4>
+					<div>
+						<p>
+							Please provide us with your basic contact information.
+						</p>
+						<div class="form">
+							<form action="" method="post">
+								<input class="rsvp" type="text" value="" placeholder="First Name">
+								<input class="rsvp" type="text" value="" placeholder="Last Name">
+								<input class="rsvp" type="text" value="" placeholder="Email Address">
+								<input class="rsvp" type="text" value="" placeholder="Phone Number">
+								<br><br>
+								<div>
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<p>&copy;2020 &nbsp;|&nbsp;The Cooking Blog</p>
+		</footer>
+	
+	<script src="./js/one_page_website.js"></script> 
+	</body>
+</html>
